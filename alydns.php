@@ -1,11 +1,11 @@
 <?php
 
+require(__DIR__ . '/config.php');
 date_default_timezone_set("GMT");
 
 //这两个值需要去阿里云申请
-define("accessKeyId", "");
-define("accessSecrec", "");
-
+#define("accessKeyId", "");
+#define("accessSecrec", "");
 
 /*
 //$obj = new AliDns(accessKeyId, accessSecrec, "newyingyong.cn");

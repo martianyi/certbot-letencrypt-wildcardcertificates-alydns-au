@@ -1,5 +1,4 @@
-#!/bin/bash
-
+#!/usr/bin/env bash
 
 PATH=$(cd `dirname $0`; pwd)
 
@@ -15,7 +14,7 @@ echo $CRETBOT_DOMAIN"_acme-challenge"$CERTBOT_VALIDATION
 /usr/bin/php  $PATH"/alydns.php"  $CERTBOT_DOMAIN "_acme-challenge"  $CERTBOT_VALIDATION >"/var/log/certdebug.log"
 
 # DNS TXT 记录刷新时间
-sleep 20
+/bin/sleep 20
 
 echo "END"
 ###
